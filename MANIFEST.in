@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include microsoft_integration *.css
+recursive-include microsoft_integration *.csv
+recursive-include microsoft_integration *.html
+recursive-include microsoft_integration *.ico
+recursive-include microsoft_integration *.js
+recursive-include microsoft_integration *.json
+recursive-include microsoft_integration *.md
+recursive-include microsoft_integration *.png
+recursive-include microsoft_integration *.py
+recursive-include microsoft_integration *.svg
+recursive-include microsoft_integration *.txt
+recursive-exclude microsoft_integration *.pyc
