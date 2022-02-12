@@ -30,6 +30,7 @@ Example Social Login Key JSON:
 ```
 
 Notes:
+  - Replace the `redirect_url` with appropriate working url of frappe/erpnext site.
   - Base URL is `https://login.microsoftonline.com/{tenant_id}`
   - Use appropriate `client_id` and `client_secret`.
   - Microsoft JWKS URL is configurable using `microsoft_jwks_url` key in `site_config.json`. Defaults to `https://login.microsoftonline.com/common/discovery/v2.0/keys`.
