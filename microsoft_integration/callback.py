@@ -37,7 +37,8 @@ def azure_ad_b2c(*args, **kwargs):
     )
     token = token_response.json()
     decoded_id_token = get_decoded_token(token.get("id_token"), provider.client_id)
-    decoded_id_token["email"] = decoded_id_token.get("preferred_username")
+    if decoded_id_token.get("preferred_username") and not decoded_id_token.get("email"):
+        decoded_id_token["email"] = decoded_id_token.get("preferred_username")
     login_oauth_user(decoded_id_token, provider=provider.name, state=state)
 
 
